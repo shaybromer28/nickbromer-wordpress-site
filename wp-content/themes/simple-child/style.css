@@ -1,0 +1,43 @@
+/*
+ Theme Name:   Simple Child
+ Theme URI:    http://example.com/simple-child/
+ Description:  Simple Child Theme
+ Author:       Shay Bromer
+ Author URI:
+ Template:     simple
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain:  simple-child
+*/
+
+/* Styles for Contact Form */
+
+.wpcf7 p {
+  display: block;
+}
+
+.wpcf7 label {
+  width: 300px;
+  text-align: left;
+}
+.wpcf7 input {
+  display: inline;
+  margin-left: 50px;
+}
+.wpcf7 textarea {
+  display: inline;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 768px)
+{
+  .wpcf7 form {
+    float: none;
+    margin 0 auto;
+    text-align: center;
+    align: center;
+    padding-left: 20%;
+  }
+}

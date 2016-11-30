@@ -1,0 +1,140 @@
+/*
+Theme Name: Simple
+Theme URI:
+Author: Shay Bromer
+Author URI: https://wwww.shaybromer.com
+Description: This is simple theme designed for personal blogging sites.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: simple
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+body {
+    background-image: url("../img/background collage v4.png");
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+    text-align: center;
+}
+p {
+    text-indent: 50px;
+    text-align: justify;
+    display: inline;
+}
+a {
+    color: navy;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+table {
+    margin: auto;
+    text-align: center;
+}
+.tagline {
+    margin-bottom: 100px;
+}
+.content-header {
+    font-size: 26px;
+}
+.page-content {
+    margin: auto;
+    max-width: 100%;
+}
+.site-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.site-menu li {
+    padding: 5px;
+}
+#services-list {
+    margin: auto;
+}
+.content-meat {
+    text-align: justify;
+    padding: 30px;
+}
+td {
+    display: block;
+    vertical-align: top;
+}
+.content-header {
+    font-size: 21px;
+}
+#profile-image {
+    width: 185px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+}
+.post-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/*Contact Page*/
+#contact-section {
+    margin-top: 100px
+}
+#contact-header {
+    display: none;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+}
+
+/*Desktop Styles*/
+@media screen and (min-width: 768px)
+{
+    .sidebar {
+      width: 200px;
+      float: left;
+      max-height: 500px;
+      text-align: left;
+      height: 100%;
+    }
+    .page-content {
+      /*float: right;*/
+    }
+    .inner-content {
+        width: 70%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .content-meat {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+    }
+    .content-header {
+      width: 80%;
+      padding-left: 8%;
+    }
+    .post-excerpt {
+      text-align: left;
+      overflow: hidden;
+    }
+    .post-title {
+      text-align: left;
+
+    }
+    footer {
+      clear: both;
+    }
+
+
+}
