@@ -62,6 +62,7 @@ table {
 .content-meat {
     text-align: justify;
     padding: 30px;
+    padding-top: 0px;
 }
 td {
     display: block;
@@ -76,9 +77,12 @@ td {
     margin: auto;
     text-align: center;
 }
-.post-title {
-  font-size: 18px;
-  text-align: center;
+.sidebar {
+  padding-bottom: 60px;
+  padding-left: 10px;
+}
+.post-excerpt {
+  padding-left: 20px;
 }
 
 
@@ -95,6 +99,16 @@ td {
   position: absolute;
   bottom: 5px;
   text-align: center;
+}
+
+/* Blog Page */
+.post-excerpt {
+  text-align: left;
+  overflow: hidden;
+}
+.post-title {
+  text-align: left;
+  font-size: 18px;
 }
 
 /*Desktop Styles*/
@@ -123,14 +137,6 @@ td {
     .content-header {
       width: 80%;
       padding-left: 8%;
-    }
-    .post-excerpt {
-      text-align: left;
-      overflow: hidden;
-    }
-    .post-title {
-      text-align: left;
-
     }
     footer {
       clear: both;
