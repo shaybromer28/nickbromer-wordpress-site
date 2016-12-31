@@ -12,8 +12,6 @@
  Text Domain:  simple-child
 */
 
-/* Styles for Contact Form */
-
 /* Contact form 7 styles */
 .wpcf7 p {
   display: block;
@@ -41,6 +39,10 @@
   margin-left: 50px;
 }
 
+/* Contact Page */
+.page-id-15 .content-meat {
+  text-align: justify;
+}
 
 @media screen and (min-width: 768px)
 {
@@ -51,4 +53,8 @@
     align: center;
     padding-left: 20%;
   }
+  .page-id-15 .content-meat {
+    padding-left: 70px;
+  }
+
 }

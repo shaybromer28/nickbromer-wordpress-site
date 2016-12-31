@@ -16,7 +16,7 @@ wp_nav_menu ($args);
 $icon_url = get_site_icon_url ();
  ?>
 <div class="home-content">
-<img src="<?php /*site_icon_url(); */ ?>" id="profile-image">
+<img src="<?php /* site_icon_url(); */ ?>" id="profile-image">
 </div>
 
-<?php /*get_footer (); */?>
+<?php get_footer (); ?>

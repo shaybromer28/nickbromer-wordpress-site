@@ -26,4 +26,8 @@ function wpt_excerpt_length ($length) {
 }
 add_filter( 'excerpt_length', 'wpt_excerpt_length', 999);
 
+
+//Stops WordPress editor from stripping page breaks
+remove_filter('the_content', 'wpautop');
+
 ?>

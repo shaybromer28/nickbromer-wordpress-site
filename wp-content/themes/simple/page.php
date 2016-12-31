@@ -6,8 +6,5 @@
 <div class="content-meat"><?php the_content (); ?></div>
 <?php endwhile; endif; ?>
 </div>
-
 </div>
-
-
-<?php /*get_footer (); */ ?>
+<?php get_footer ();  ?>

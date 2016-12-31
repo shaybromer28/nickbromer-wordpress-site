@@ -1,8 +1,5 @@
-<br>
-<br>
-<footer>
-  <span class="footer">Copyright <?php echo date('Y'); ?></span>
-</footer>
+
+<footer>Copyright <?php echo date('Y'); ?></footer>
 <?php wp_footer(); ?>
 </body>
 </html>
