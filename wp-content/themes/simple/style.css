@@ -13,11 +13,15 @@ Text Domain: simple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+html {
+  height: 100%;
+}
 body {
     background-image: url("../img/background collage v4.png");
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
     text-align: center;
+    height: 100%;
+    margin: 0px;
 }
 p {
     text-indent: 50px;
@@ -43,6 +47,7 @@ table {
 }
 .page-content {
     margin: auto;
+    margin-bottom: 40px;
     max-width: 100%;
 }
 .site-menu {
@@ -76,7 +81,6 @@ td {
     text-align: center;
 }
 .sidebar {
-  padding-bottom: 60px;
   padding-left: 10px;
 }
 .post-excerpt {
@@ -93,8 +97,29 @@ td {
 }
 
 /* Footer */
-footer {
-  margin-top: 10%;
+.footer {
+  /*position: absolute;
+  bottom: 10px;
+  width: 100%;*/
+
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-left: 0px;
+  background: black;
+  height: 30px;
+  color: white;
+}
+
+}
+body.page-id-17 footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding-left: 0px;
+  background: black;
+  height: 30px;
+  color: white;
 }
 
 /* Blog Page */
@@ -113,12 +138,19 @@ footer {
     .sidebar {
       width: 200px;
       float: left;
-      max-height: 500px;
+      /*max-height: 500px;*/
       text-align: left;
       height: 100%;
     }
     .page-content {
-      /*float: right;*/
+      /* These lines used for positioning footer on mobile view */
+      min-height: 100%inherit;;
+      margin-bottom: 30px;
+    }
+    .page-content::after {
+      content: "";
+      display: block;
+      margin-bottom: 30px
     }
     .inner-content {
         width: 70%;
@@ -134,16 +166,22 @@ footer {
       width: 80%;
       padding-left: 8%;
     }
-    footer {
-      /*margin-left: 18%;
-      margin-top: 10%;*/
-
+    .footer {
+      /*position: absolute;
+      bottom: 10px;
+      width: 70%;
+      padding-left: 230px;*/
+      background: black;
+      height: 30px;
+      color: white;
+      position: fixed;
+      bottom: 0px
+      width: 100%;
+    }
+    /*body.page-id-17 footer {
       position: absolute;
       bottom: 10px;
-      left: 50%;
-    }
-    body.page-id-17 footer {
-      margin: auto;
-      margin-top: 10%;
-    }
+      width: 100%;
+      padding-left: 0px;
+    }*/
 }

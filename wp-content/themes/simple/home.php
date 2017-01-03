@@ -7,6 +7,7 @@
 <div class="post-excerpt">
   <h2 class="post-title"><?php the_title (); ?></h2>
   <?php echo strip_tags(get_the_excerpt ()); ?>
+  <br>
   <a href="<?php the_permalink(); ?>">Read More</a>
 </div>
 <?php endwhile; endif; ?>
