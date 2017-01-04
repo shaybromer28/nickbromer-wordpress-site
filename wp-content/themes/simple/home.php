@@ -1,6 +1,6 @@
-<div class="page-content">
-<?php get_template_part ('sidebar'); ?>
 
+<?php get_template_part ('sidebar'); ?>
+<div class="page-content">
 <div class="inner-content">
 <h2 class="content-header">Recent Articles</h2>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
